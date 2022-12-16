@@ -4,7 +4,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel, sigmoid_kernel
 import pickle
 import regex
-df = pd.read_csv("winemag-data-130k-v2.csv").drop(["Unnamed: 0", "region_2"], axis=1)
+# read from folder dblib
+df = pd.read_csv("dblib/winemag-data-130k-v2.csv").drop(["Unnamed: 0", "region_2"], axis=1)
 # Load the data
 def load_data(df):
     # predictor variables
