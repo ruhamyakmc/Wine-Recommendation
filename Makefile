@@ -6,11 +6,11 @@ format:
 	black *.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=__*__.py --disable=W0511,E1101 *.py main/app/*.py main/data/*.py main/eda/*.py main/fastapi-apis/*.py main/helpers/*.py main/tests/*.py
+	pylint --disable=R,C --ignore-patterns=__*__.py --disable=W0511,E1101 *.py
 
 test:
 	# python -m pytest -vv --cov=Code_10 --cov=main test_*.py
-	python -m pytest -vv --cov=main main/tests/test_*.py
+	# python -m pytest -vv --cov=main main/tests/test_*.py
 
 build:
  	#build container
@@ -18,7 +18,7 @@ build:
 
 run:
 	#run docker
-	docker run -p 127.0.0.1:8080:8080 2d1505f9302f
+	docker run -p 127.0.0.1:8080:8080 4cad909e9c28
 
 deploy:
  	#deploy
