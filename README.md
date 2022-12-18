@@ -6,8 +6,8 @@ The code will read in the winemag-data-130k-v2.csv file from the dblib folder, p
 
 Saving and loading the model, The sigmoid kernel scores for the wines are saved to a pickle file called sigmoid_kernel_score.pkl. To load the model, you can use the following code:
 
-`import pickle
-sigmoid_kernel_score = pickle.load(open("sigmoid_kernel_score.pkl", "rb"))`
+`import pickle`
+`sigmoid_kernel_score = pickle.load(open("sigmoid_kernel_score.pkl", "rb"))`
 
 Customizing the recommendations,To get recommendations for a different wine, you can call the get_recommendations function with the name of the wine you want recommendations for and the sigmoid kernel scores:
 
