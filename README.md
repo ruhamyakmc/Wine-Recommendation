@@ -1,4 +1,4 @@
-Wine Recommendation System
+## Wine Recommendation System
 
 This code implements a wine recommendation system that recommends wines based on their descriptions. The system uses a sigmoid kernel to calculate similarity scores between different wines, and recommends the most similar wines to a given wine.
 
@@ -19,5 +19,5 @@ recommendations = get_recommendations("Name of Wine, Variety", sigmoid_kernel_sc
 '''
 The predictors_final dataframe contains information about the wines, including their names, descriptions, and other metadata. The get_recommendations function returns a dataframe with the recommended wines.
 
-# data source: https://www.kaggle.com/zynicide/wine-reviews
+data source: https://www.kaggle.com/zynicide/wine-reviews
 
