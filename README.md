@@ -10,12 +10,12 @@ The sigmoid kernel scores for the wines are saved to a pickle file called sigmoi
 
 `import pickle
 
-sigmoid_kernel_score = pickle.load(open("sigmoid_kernel_score.pkl", "rb"))'
+sigmoid_kernel_score = pickle.load(open("sigmoid_kernel_score.pkl", "rb"))`
+Customizing the recommendations
 
-Customizing the recommendations, To get recommendations for a different wine, you can call the get_recommendations function with the name of the wine you want recommendations for and the sigmoid kernel scores:
+To get recommendations for a different wine, you can call the get_recommendations function with the name of the wine you want recommendations for and the sigmoid kernel scores:
 
 `recommendations = get_recommendations("Name of Wine, Variety", sigmoid_kernel_score, predictors_final)`
-
 The predictors_final dataframe contains information about the wines, including their names, descriptions, and other metadata. The get_recommendations function returns a dataframe with the recommended wines.
 
 data source: https://www.kaggle.com/zynicide/wine-reviews
