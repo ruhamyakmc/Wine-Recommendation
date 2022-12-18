@@ -9,7 +9,7 @@ Saving and loading the model, The sigmoid kernel scores for the wines are saved 
 `import pickle`
 `sigmoid_kernel_score = pickle.load(open("sigmoid_kernel_score.pkl", "rb"))`
 
-Customizing the recommendations,To get recommendations for a different wine, you can call the get_recommendations function with the name of the wine you want recommendations for and the sigmoid kernel scores:
+Customizing the recommendations, To get recommendations for a different wine, you can call the get_recommendations function with the name of the wine you want recommendations for and the sigmoid kernel scores:
 
 `recommendations = get_recommendations("Name of Wine, Variety", sigmoid_kernel_score, predictors_final)`
 
